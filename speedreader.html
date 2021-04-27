@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<link rel="stylesheet" href="speedreader.css">
+
+  </head>
+  <body>
+
+
+    <h1 style=" text-align:center; " > SpeedReader</h1>
+
+
+<div id="div">
+  <p></p>
+</div>
+
+
+    <br>
+<div class="options">
+
+    <fieldset>
+    <label style="float: left;"><strong>Play Controls:</strong></label>
+
+    	<div>
+        <button id="str" onclick="play()">Play</button>
+        <button id="stp" onclick="stop()" >Stop</button>
+
+    	</div>
+
+    </fieldset>
+
+    <fieldset>
+    <label style="float: left;"><strong>Speed:</strong></label>
+
+
+      <div>
+<select id="" name="">
+  <option onclick="sp=500;" >50 </option>
+  <option onclick="sp=200;">300</option>
+  <option onclick="sp=171;" >350</option>
+  <option onclick="sp150;" >400</option>
+  <option onclick="sp=133;" >450</option>
+  <option onclick="sp=120;" >500</option>
+
+</select>
+
+
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+    <label style="float: left;"><strong>Size:</strong></label>
+<br>
+
+<input type="radio" name="" onclick="document.getElementById('div').style.fontSize='36pt'" value="Medium">
+<label for="Medium">Medium</label>
+<input type="radio" name="" onclick="document.getElementById('div').style.fontSize='48pt'" value="Big">
+<label for="Big">Big</label>
+<input type="radio" name="" onclick="document.getElementById('div').style.fontSize='60pt'"value="Bigger">
+<label for="Bigger">Bigger</label>
+
+
+
+      </fieldset>
+
+</div>
+
+
+
+<label style="margin:180px; padding:0.1px;" ><strong>Input text:</strong></label> <br>
+<textarea id="input" name="name" rows="10" cols="80"></textarea>
+
+
+<script src="speedreader.js">
+</script>
+
+  </body>
+
+
+
+
+</html>
